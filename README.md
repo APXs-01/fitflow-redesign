@@ -19,12 +19,21 @@ backend/     Express API gateway (talks to Firestore + proxies to ai-service)
 ai-service/  FastAPI service for workout plan generation & nutrition image recognition
 ```
 
+## Firebase setup (required before auth/data will work)
+
+1. Create a project at [console.firebase.google.com](https://console.firebase.google.com)
+2. **Build → Authentication → Get started → Email/Password → Enable**
+3. **Build → Firestore Database → Create database → Start in test mode**
+4. **Project settings → General → Your apps → Add app → Web** → copy the config values into `frontend/.env` (see `frontend/.env.example`)
+5. **Project settings → Service accounts → Generate new private key** → save the downloaded JSON as `backend/serviceAccountKey.json` (already gitignored) and point `GOOGLE_APPLICATION_CREDENTIALS` at it in `backend/.env`
+
 ## Running locally
 
 ### Frontend
 ```
 cd frontend
 npm install
+cp .env.example .env   # fill in your Firebase web config
 npx expo start
 ```
 
