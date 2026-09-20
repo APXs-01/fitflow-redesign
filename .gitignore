@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.env.local
+*.venv/
+venv/
+
+# Frontend (Expo/React Native)
+frontend/.expo/
+frontend/dist/
+frontend/web-build/
+frontend/*.log
+
+# Backend
+backend/dist/
+
+# AI service
+ai-service/.venv/
+
+# Firebase
+**/serviceAccountKey.json
+.firebase/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.claude/
