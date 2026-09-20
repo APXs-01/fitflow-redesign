@@ -30,3 +30,7 @@ ai-service/.venv/
 Thumbs.db
 .vscode/
 .claude/
+
+# AI assistant instruction files (not project docs)
+CLAUDE.md
+AGENTS.md
