@@ -2,6 +2,8 @@
 
 Redesigned fitness tracking app: AI-powered personalized workout plans, private social circles, and camera-based nutrition tracking.
 
+**Student:** Liyanage LPS (IT23640184)
+
 ## Stack
 
 | Layer | Technology |
